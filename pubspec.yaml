@@ -1,0 +1,27 @@
+name: notibase_flutter
+description: >-
+  Official Flutter SDK for Notibase — push registration, identity, events,
+  attribution and the in-app inbox. Pure Dart, no native code: pass us the
+  token from firebase_messaging and everything else is one call away.
+version: 0.5.1
+homepage: https://notibase.dev/flutter.html
+repository: https://github.com/notibaseorg/notibase-flutter
+issue_tracker: https://github.com/notibaseorg/notibase-flutter/issues
+documentation: https://notibase.dev/flutter.html
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # The ONLY dependency (Arch §8.2) — device-id persistence.
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  # test-only: HMAC for the e2e's identity-verification checks
+  crypto: ^3.0.0
