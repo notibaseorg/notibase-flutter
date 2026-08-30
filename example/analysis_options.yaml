@@ -1,0 +1,5 @@
+# Declared rather than inherited from the package above. The analyzer would
+# walk up and find that one anyway, but a nested package quietly borrowing
+# its parent's lints is the sort of thing that changes meaning the day
+# somebody moves a directory.
+include: package:flutter_lints/flutter.yaml
