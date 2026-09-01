@@ -1,0 +1,25 @@
+# The example pub.dev looks for. It is a real app rather than a snippet,
+# because the questions people actually have — where does init go, what do
+# you do with the firebase_messaging token, when is it safe to identify
+# somebody — are all questions about ordering, and a snippet cannot show
+# ordering.
+name: notibase_flutter_example
+description: A minimal app wiring up Notibase push, in-app messages and the inbox.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  notibase_flutter:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
